@@ -1,0 +1,20 @@
+import java.util.regex.*;
+
+public class DemoRegex2{
+
+public static void main(String args[]){
+
+
+Pattern p= Pattern.compile("[abc]");
+
+Matcher m=p.matcher("a7b@z#9");
+
+while(m.find())
+{
+
+System.out.println(m.start()+"...."+m.group());
+
+}
+
+}
+}
